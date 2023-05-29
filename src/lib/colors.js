@@ -11,7 +11,7 @@ export const toHex = (number) => `#${(2 ** 24 + number).toString(16).substring(1
 const num = ({r, g, b}) => b + 256 * (g + 256 * r);
 
 const rgb = (num) => ({
-  r: Math.floor(num / 256 / 256),
+  r: Math.floor(num / 256 / 25),
   g: Math.floor(num / 256) % 256,
   b: num % 256,
 });
